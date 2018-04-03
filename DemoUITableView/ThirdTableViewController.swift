@@ -42,7 +42,7 @@ class ThirdTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "secondReuseCell", for: indexPath) as! SecondTableViewCell
         
         let cryptoName = ["Ada", "Litecoin", "Aion", "BitcoinCash", "BinanceCoin", "Bitcoin", "BitcoinGold", "Doge", "Ellaisum", "Emercoin", "Etherium", "Etherium Classic" ]
-        cell.myImageUI.image = UIImage(named: "crypto\(indexPath.row)")
+        cell.myImageUI.image = UIImage(named: "crypto\(indexPath.row + 1)")
         cell.firstLabel.text = "This is"
         cell.secondLabel.text = "\(cryptoName[indexPath.row])"
         return cell
